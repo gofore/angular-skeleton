@@ -1,2 +1,2 @@
-<span>{{ data.name }}</span>
+<span [class.todo-done]="data.done">{{ data.name }}</span>
 <button (click)="sendButtonToParent()">Set me done</button>
