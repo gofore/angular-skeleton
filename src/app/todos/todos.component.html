@@ -1,0 +1,5 @@
+{{todos | json }}
+
+<div *ngFor="let todo of todos">
+  <app-todo-item [data]="todo" (buttonSendingEvent)="childWasPressed($event)" ></app-todo-item>
+</div>
