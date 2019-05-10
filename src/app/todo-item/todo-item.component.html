@@ -1,2 +1,8 @@
-<span>{{ data.name }}</span>
-<button (click)="sendButtonToParent()">Set me done</button>
+<div class="grid-row">
+    <div>
+        <a [routerLink]="[data.id]">
+            <div>{{ data.name }}</div>
+        </a>
+    </div>
+    <div>{{ data.done }}</div>
+</div>

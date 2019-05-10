@@ -4,17 +4,24 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './todos/todos.component';
 import { TodoItemComponent } from './todo-item/todo-item.component';
+import { AppRoutingModule } from './app-routing.module';
+import { EditTodoComponent } from './edit-todo/edit-todo.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodosComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    EditTodoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {
+}
