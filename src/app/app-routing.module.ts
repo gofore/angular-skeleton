@@ -3,7 +3,6 @@ import { RouterModule } from '@angular/router';
 import { TodosComponent } from './todos/todos.component';
 import { EditTodoComponent } from './edit-todo/edit-todo.component';
 import { AdminGuard } from './admin.guard';
-import { AdminViewComponent } from './admin-view/admin-view.component';
 
 const appRoutes = [
   {
@@ -16,7 +15,8 @@ const appRoutes = [
   },
   {
     path: 'admin',
-    loadChildren: './admin-ui/admin-ui.module#AdminUIModule'
+    loadChildren: './admin-ui/admin-ui.module#AdminUIModule',
+    canLoad: [AdminGuard]
   },
   {
     path: '',

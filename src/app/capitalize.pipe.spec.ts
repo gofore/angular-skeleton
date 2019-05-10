@@ -31,8 +31,15 @@ describe('CapitalizePipe', () => {
     expect(pipe.transform('null')).toBe('Null');
   });
 
-  it('should change jajajs443 to Jajajs443', () => {
+  it('should change ``null`` to Null', () => {
     const pipe = new CapitalizePipe();
     expect(pipe.transform('null')).toBe('Null');
   });
+
+  it('should change `null-value` to Null', () => {
+    const pipe = new CapitalizePipe();
+    expect(pipe.transform(null)).toBe(null);
+  });
+
+
 });
