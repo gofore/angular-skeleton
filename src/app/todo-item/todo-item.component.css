@@ -1,3 +1,14 @@
+.todo {
+    font-size: 2rem;
+}
+
+.todo-button {
+    font-size: 2rem;
+    padding: 0.3rem 0.5rem;
+    background: blue;
+    color: white;
+}
+
 .todo-done {
     color: #999999;
     text-decoration: line-through;

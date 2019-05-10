@@ -1,2 +1,4 @@
-<span [class.todo-done]="data.done">{{ data.name }}</span>
-<button (click)="sendButtonToParent()">Set me done</button>
+<div [routerLink]="['/todos', data.id]">
+  <button class="todo-button" (click)="sendButtonToParent()">Set me done</button>
+  <span class="todo" [class.todo-done]="data.done">{{ data.name }}</span>
+</div>
