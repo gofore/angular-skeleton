@@ -7,13 +7,15 @@ import { TodoItemComponent } from './todo-item/todo-item.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EditTodoComponent } from './edit-todo/edit-todo.component';
 import { FormsModule } from '@angular/forms';
+import { CapitalizePipe } from './capitalize.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodosComponent,
     TodoItemComponent,
-    EditTodoComponent
+    EditTodoComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,
