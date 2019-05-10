@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
-import { Todo, TodoService } from '../todo.service';
+import { TodoService } from '../todo.service';
 
 describe('EditTodoComponent', () => {
   let component: EditTodoComponent;
@@ -27,7 +27,7 @@ describe('EditTodoComponent', () => {
               provide: TodoService,
               useValue: {
                 getTodo: ( index ) => {
-                  console.log('tets')
+                  console.log('tets');
                   return {
                     name: 'test',
                     id: '2',

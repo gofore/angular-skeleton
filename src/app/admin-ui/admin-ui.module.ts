@@ -1,10 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AdminViewComponent } from '../admin-view/admin-view.component';
+import { RouterModule } from '@angular/router';
+
+
+const routes = [
+  {
+    path: '',
+    component: AdminViewComponent
+  }
+];
 
 @NgModule({
-  declarations: [],
+  declarations: [AdminViewComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild(routes)
   ]
 })
 export class AdminUIModule { }
